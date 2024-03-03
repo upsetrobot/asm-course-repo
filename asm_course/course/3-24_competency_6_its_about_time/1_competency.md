@@ -30,7 +30,7 @@ strange time marked on the stone as well. You wonder if you can solve this
 mystery by setting your watch and moving time forward. You will implement a 
 program that will help you set the time on your pocket watch.
 
-``` v (for color)
+``` py (for color)
      '"'\__\__"'\_/;  / /\\. ||;v/\\ \/ ./ /,./'' __..."    .          *
  .    __.--.__';  \\ |;'. \\  \\ \.\\ \v/ // ___/""'   '.._
     :>--.___.  \\  \i'.'\//\\_//.;\v/; |V;' /'  ..--._.-- 
