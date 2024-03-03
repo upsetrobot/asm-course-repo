@@ -129,7 +129,7 @@ values.
 
 Example:
 
-``` x86asm
+``` asm
 myFunction:
     push rbp        ; Save old frame pointer.
     mov rbp, rsp    ; Make new frame.
@@ -198,7 +198,7 @@ variables than there are registers, so using the stack becomes necessary.
 
 For example:
 
-``` x86asm
+``` asm
 myFunction:
     push rbp
     mov rbp, rsp
@@ -237,7 +237,7 @@ sections of code that may mess with those registers.
 
 For example:
 
-``` x86asm
+``` asm
     ...
     xor rcx, rcx                    ; Use `rcx` as a counter.
     xor rdx, rdx                    ; Use `rdx` for tracking something.
@@ -272,7 +272,7 @@ if you wanted to.
 
 For example:
 
-``` x86asm
+``` asm
 myFunction:
     enter
 
@@ -320,7 +320,7 @@ are dealing with.
 
 For example:
 
-``` x86asm
+``` asm
 myFunction:
     push rbp
     mov rbp, rsp

@@ -154,7 +154,7 @@ text 'Welcome to Tutorials Point' in this file. Next, the program reads from
 the file and stores the data into a buffer named info. Lastly, it displays the
 text as stored in info [[1]](#sources):
 
-``` x86asm
+``` asm
 section	.text
    global _start         ;must be declared for using gcc
 	
@@ -247,7 +247,7 @@ Syscalls and arguments will be different for differents systems such as
 Windows and x64 Linux or Unix-like OS'. Here is an example of the functions 
 used above in an x64 Linux program.
 
-``` x86asm
+``` asm
 %define SYS_READ    0
 %define SYS_WRITE   1
 %define SYS_OPEN    2

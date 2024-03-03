@@ -32,7 +32,7 @@ the comments above the function.
 
 For example, you find the following code:
 
-``` x86asm
+``` asm
 ; int studentFunction1(int a, int b)
 ;
 ; @brief    Function adds two numbers together and returns the sum.
@@ -67,7 +67,7 @@ studentFunction1:
 
 To complete this, you add your code as in this example:
 
-``` x86asm
+``` asm
 ; int studentFunction1(int a, int b)
 ;
 ; @brief    Function adds two numbers together and returns the sum.

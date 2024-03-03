@@ -75,7 +75,7 @@ not required).
 
 For example:
 
-``` x86asm
+``` asm
     cmp byte [rdi], 10          ; Size declared as one byte.
     cmp byte ptr [rdi], 10      ; Exactly the same as above.
 
@@ -102,7 +102,7 @@ operand (such as in `mov r8, byte 1`) [[1]](#sources).
 
 Example:
 
-``` x86asm
+``` asm
    mov rax, 97          ; Load rax with value of 97. Decimal version.
    mov rax, 0x61        ; Load rax with value of 97. Hex version.
    mov rax, 61h         ; Load rax with value of 97. Alternate hex version.
@@ -132,7 +132,7 @@ directive is as follows: `<constant_name> equ expression`.
 
 For example:
 
-``` x86asm
+``` asm
 TOTAL_STUDENTS equ 50
 ```
 
@@ -140,7 +140,7 @@ TOTAL_STUDENTS equ 50
 
 You can then use this constant value in your code, like:
 
-``` x86asm
+``` asm
 mov  ecx,  TOTAL_STUDENTS 
 cmp  eax,  TOTAL_STUDENTS
 ```
@@ -149,7 +149,7 @@ cmp  eax,  TOTAL_STUDENTS
 
 The operand of an `EQU` statement can be an expression:
 
-``` x86asm
+``` asm
 LENGTH equ 20
 WIDTH  equ 10
 AREA   equ length * width
@@ -161,7 +161,7 @@ The above code segment would define `AREA` as `200`. [[2]](#sources)
 
 The following example illustrates the use of the `EQU` directive:
 
-``` x86asm
+``` asm
 SYS_EXIT  equ 1
 SYS_WRITE equ 4
 STDIN     equ 0
@@ -229,7 +229,7 @@ The `%assign` directive can be used to define numeric constants like the `EQU`
 directive. But this directive allows redefinition. For example, you may define 
 the constant `TOTAL` as:
 
-``` x86asm 
+``` asm 
 %assign TOTAL 10
 ```
 
@@ -237,7 +237,7 @@ the constant `TOTAL` as:
 
 Later in the code, you can redefine it as:
 
-``` x86asm
+``` asm
 %assign  TOTAL  20
 ```
 
@@ -252,7 +252,7 @@ The `%define` directive allows defining both numeric and string constants.
 This directive is similar to the `#define` in C. For example, you may define 
 the constant `PTR` as:
 
-``` x86asm 
+``` asm 
 %define PTR [EBP+4]
 ```
 
@@ -292,7 +292,7 @@ There are five basic forms of the define directive:
 
 Following are some examples of using define directives:
 
-``` x86asm
+``` asm
 choice		DB	'y'
 number		dw	12345
 neg_number	DW	-12345
@@ -317,7 +317,7 @@ respectively.
 
 The following program shows the use of define directive:
 
-``` x86asm 
+``` asm 
 section .text
    global _start     ;must be declared for linker (gcc)
 
@@ -349,7 +349,7 @@ y
 
 You can have multiple data definition statements in a program. For example:
 
-``` x86asm 
+``` asm 
 choice   DB    'Y'         ;ASCII of y = 79H
 number1  DW    12345       ;12345D = 3039H
 number2  DD    12345679    ;123456789D = 75BCD15H
@@ -367,7 +367,7 @@ The `TIMES` directive allows multiple initializations to the same value. For
 example, an array named `marks` of size 9 can be defined and initialized to 
 zero using the following statement:
 
-``` x86asm 
+``` asm 
 marks  TIMES  9  DW  0
 ```
 
@@ -376,7 +376,7 @@ marks  TIMES  9  DW  0
 The `TIMES` directive is useful in defining arrays and tables. The following 
 program displays 9 asterisks on the screen:
 
-``` x86asm
+``` asm
 section  .text
    global _start     ;must be declared for linker (ld)
 
@@ -425,7 +425,7 @@ There are five basic forms of the reserve directive:
 
 Example:
 
-``` x86asm
+``` asm
 section .bss
    sum resb 1           ; Reserve space for one byte.
    answer resd 5        ; Reserve space for five dwords.

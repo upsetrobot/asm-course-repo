@@ -49,7 +49,7 @@ module.
 
 Example:
 
-``` x86asm
+``` asm
 	mov rax, 15			; Moves 15 into rax.
 	mov rbx, rax		; Moves the contents or rax into rbx (which is 15).
 	mov byte [rax], 15	; Moves 15 (as one byte) into the location pointed to by rax.
@@ -57,7 +57,7 @@ Example:
 
 Examples of Invalid moves:
 
-``` x86asm
+``` asm
 	mov 15, rax					; Cannot move into an immediate value.
 	mov byte [rax], byte [rbx] 	; Cannot move from memory to memory.
 	mov [rax], 15				; Assembler does not know how many bytes to move.
@@ -94,7 +94,7 @@ The `SF` flag indicates the sign of the signed result [[1]](#sources).
 
 Example:
 
-``` x86asm
+``` asm
 	mov	rax, 1				; Moves 1 into rax.
 	mov rbx, 1				; Moves 1 into rbx.
 	add rax, 22				; Adds 22 into rax (rax has 23 now).
@@ -123,7 +123,7 @@ flag indicates the sign of the signed result [[2]](#sources).
 
 Example:
 
-``` x86asm
+``` asm
    mov   rax, 10           ; Moves 10 into rax.
    mov   rbx, 20           ; Moves 20 into rbx.
    sub   rax, 22           ; Subtracts 22 from rax to rax (rax has -12 now).

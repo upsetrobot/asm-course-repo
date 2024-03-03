@@ -121,7 +121,7 @@ and the other operand references a register [[1]](#sources).
 
 For example:
 
-``` x86asm
+``` asm
     ADD	BYTE_VALUE, DL	; Adds the register in the memory location
     MOV	BX, WORD_VALUE	; Operand from the memory is added to register
 ```
@@ -134,7 +134,7 @@ This addressing mode uses the arithmetic operators to modify an address. For
 example, look at the following definitions that define tables of data
 [[1]](#sources):
 
-``` x86asm
+``` asm
     BYTE_TABLE DB  14, 15, 22, 45      ; Tables of bytes
     WORD_TABLE DW  134, 345, 564, 123  ; Tables of words
 ```
@@ -143,7 +143,7 @@ example, look at the following definitions that define tables of data
 The following operations access data from the tables in the memory into
 registers [[1]](#sources):
 
-``` x86asm
+``` asm
     MOV CL, BYTE_TABLE[2]	; Gets the 3rd element of the BYTE_TABLE
     MOV CL, BYTE_TABLE + 2	; Gets the 3rd element of the BYTE_TABLE
     MOV CX, WORD_TABLE[3]	; Gets the 4th element of the WORD_TABLE
@@ -166,7 +166,7 @@ register [[1]](#sources).
 The following code snippet shows how to access different elements of the
 variable [[1]](#sources):
 
-``` x86asm
+``` asm
     MY_TABLE TIMES 10 DW 0  ; Allocates 10 words (2 bytes) each initialized to 0
     MOV EBX, [MY_TABLE]     ; Effective Address of MY_TABLE in EBX
     MOV [EBX], 110          ; MY_TABLE[0] = 110
@@ -179,7 +179,7 @@ variable [[1]](#sources):
 The `MOV` instruction causes ambiguity at times. For example, look at the
 statements [[1]](#sources):
 
-``` x86asm
+``` asm
     MOV  EBX, [MY_TABLE]  ; Effective Address of MY_TABLE in EBX
     MOV  [EBX], 110	      ; MY_TABLE[0] = 110
 ```
@@ -189,7 +189,7 @@ It is not clear whether you want to move a byte equivalent or word equivalent
 of the number 110. In such cases, it is wise to use a type specifier
 [[1]](#sources).
 
-``` x86asm
+``` asm
     MOV  EBX, [MY_TABLE]    ; Effective Address of MY_TABLE in EBX
     MOV  BYTE [EBX], 110	; MY_TABLE[0] = 110
 ```
@@ -202,7 +202,7 @@ stores a name 'Zara Ali' in the data section of the memory, then changes its
 value to another name 'Nuha Ali' programmatically and displays both the names
 [[1]](#sources).
 
-``` x86asm
+``` asm
 section	.text
    global _start     ;must be declared for linker (ld)
 

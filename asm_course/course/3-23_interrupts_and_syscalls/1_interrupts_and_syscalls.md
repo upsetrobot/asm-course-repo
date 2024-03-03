@@ -149,7 +149,7 @@ You can use preprocessor directives or any of the constant designations to
 define syscall numbers you want to use in your program if you want. 
 
 For example:
-``` x86asm
+``` asm
 %define SYS_READ    0
 %define SYS_WRITE   1
 %define SYS_OPEN    2
@@ -182,7 +182,7 @@ SYNOPSIS
 Here is an example of reading and writing to a terminal. Remember the standard 
 file descriptors (`0` is `stdin`, `1` is `stdout`, and `2` is `stderr`):
 
-``` x86asm
+``` asm
 %define SYS_READ    0
 %define SYS_WRITE   1
 %define SYS_EXIT    60

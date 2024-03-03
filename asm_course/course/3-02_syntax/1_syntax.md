@@ -85,7 +85,7 @@ declaring the `bss` section is `section .bss`. [[1]](#sources)
 must begin with the declaration `global _start`, which tells the kernel where 
 the program execution begins. The syntax for declaring text section is: 
 
-``` x86asm
+``` asm
 section.text
 
    global _start
@@ -111,7 +111,7 @@ or on the same line as code. [[1]](#sources)
 
 Example:
 
-``` x86asm 
+``` asm 
 ; This is a comment. This program displays a message on screen.
 
    add eax, ebx     ; This is an end-of-line comment.  adds ebx to eax
@@ -138,14 +138,14 @@ translated into machine code.
 
 Example:
 
-``` x86asm
+``` asm
    mov eax, 0xbeef
    jmp [eax]
 ```
 
 becomes:
 
-``` x86asm
+``` asm
 0:  b8 ef be 00 00          mov    eax,0xbeef
 5:  ff 20                   jmp    DWORD PTR [eax]
 ```
@@ -183,7 +183,7 @@ second are the operands or the parameters of the command. [[1]](#sources)
 
 Following are some examples of typical assembly language statements:
 
-``` x86asm
+``` asm
 INC COUNT        ; Increment the memory variable COUNT
 
 MOV TOTAL, 48    ; Transfer the value 48 in the 
@@ -217,7 +217,7 @@ which are labels preceded by a period and only apply to one function.
 
 For example:
 
-``` x86asm
+``` asm
 myFunction:     ; <--- Label (in this case, a function label).
 
     ...         ; Assembly code.
@@ -245,7 +245,7 @@ the value of the memory the address is pointing at, brackets are used.
 
 For example:
 
-``` x86asm
+``` asm
     mov rax, address
     mov rcx, rax            ; Move value in rax (an address) into rcx.
     mov rcx, [rax]          ; Moves value pointed to by rax into rcx.
@@ -256,7 +256,7 @@ For example:
 The size here is based on the operand size. Some instructions may not have 
 implicit sizes, so you have to define the size. For example:
 
-``` x86asm
+``` asm
     cmp byte [rdi], 'b'     ; "byte" defines the size of what rdi is pointing at.
     cmp byte ptr [rdi], 'b' ; Same as above.
 ```
@@ -271,7 +271,7 @@ and operations will be described in the next few modules.
 The following assembly language code displays the string 'Hello World' on the 
 screen: 
 
-``` x86asm 
+``` asm 
 section  .text
    global _start     ; must be declared for linker (ld)
 
@@ -359,7 +359,7 @@ the screen.  [[1]](#sources)
 Interestingly, if you replace the `section` keyword with `segment`, you will 
 get the same result. Try the following code:
 
-``` x86asm
+``` asm
 segment .text        ;code segment
    global _start     ;must be declared for linker 
 

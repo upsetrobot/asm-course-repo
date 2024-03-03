@@ -47,7 +47,7 @@ symbol that represents the current value of the location counter. In the
 following example, `$` points to the byte after the last character of the 
 string variable `msg` [[1]](#sources).
 
-``` x86asm
+``` asm
 msg  db  'Hello, world!',0xa    ;our dear string
 len  equ  $ - msg               ;length of our dear string
 ```
@@ -56,7 +56,7 @@ len  equ  $ - msg               ;length of our dear string
 Therefore, `$-msg` gives the length of the string. We can also write
 [[1]](#sources):
 
-``` x86asm
+``` asm
 msg db 'Hello, world!',0xa      ;our dear string
 len equ 13                      ;length of our dear string
 ```
@@ -72,7 +72,7 @@ byte.
 
 For example:
 
-``` x86asm
+``` asm
 message DB 'This string is null-terminated. The sentinel is a null byte.', 0
 ```
 
@@ -247,7 +247,7 @@ The `MOVS`, `MOVSB`, `MOVSW`, and `MOVSD` instructions can be preceded by the
 
 For example:
 
-``` x86asm
+``` asm
 section .text
     ...
 
@@ -314,7 +314,7 @@ next transfer can be made [[6]](#sources).
 
 For example:
 
-``` x86asm
+``` asm
 section .text
     ...
 
@@ -383,7 +383,7 @@ stored [[7]](#sources).
 
 For example:
 
-``` x86asm
+``` asm
 section .text
     ...
 
@@ -453,7 +453,7 @@ the setting of the status flags before the next comparison is made
 
 For example:
 
-``` x86asm
+``` asm
 section .text
     ...
 
@@ -526,7 +526,7 @@ takes some action based on the setting of status flags [[9]](#sources).
 
 For example:
 
-``` x86asm
+``` asm
 section .text
     ...
 
@@ -559,7 +559,7 @@ section .bss
 
 Another example:
 
-``` x86asm
+``` asm
 section .text
     ...
 

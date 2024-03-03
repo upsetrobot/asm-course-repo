@@ -30,7 +30,7 @@ by a name. Following this name, the body of the procedure is described which
 performs a well-defined job. End of the procedure is indicated by a return
 statement [[1]](#sources).
 
-``` x86asm
+``` asm
 proc_name:
    procedure body
    ...
@@ -46,7 +46,7 @@ Let us write a very simple procedure named `sum` that adds the variables
 stored in the `ECX` and `EDX` register and returns the sum in the `EAX` 
 register [[1]](#sources):
 
-``` x86asm
+``` asm
 sum:
    mov     eax, ecx
    add     eax, edx
@@ -77,7 +77,7 @@ The following program shows how "factorial n" is implemented in assembly
 language. To keep the program simple, we will calculate factorial `3`
 [[2]](#sources):
 
-``` x86asm
+``` asm
 section	.text
    global _start         ;must be declared for using gcc
 	
@@ -143,7 +143,7 @@ variables: the `bin` format cannot [[3]](#sources).
 The `EXTERN` directive takes as many arguments as you like. Each argument is
 the name of a symbol [[3]](#sources):
 
-``` x86asm
+``` asm
 extern  _printf 
 extern  _sscanf,_fscanf
 ```
@@ -158,7 +158,7 @@ assemblers use the name `PUBLIC` for this purpose [[3]](#sources).
 which are defined in the same module as the `GLOBAL` directive. For example
 [[3]](#sources):
 
-``` x86asm
+``` asm
 global _main 
 _main: 
         ; some code.
@@ -176,7 +176,7 @@ in the same file (so `extern` is not needed), but the file to be included
 needs to be in the current directory or in the directory specified by the `-i` 
 option for the `nasm` command. 
 
-``` x86asm
+``` asm
 %include "<mylib.nasm>"
 ...     ; some code.
 ```
@@ -250,7 +250,7 @@ would have to save them before using them.
 
 For example:
 
-``` x86asm
+``` asm
 myFunction:
     push r12        ; Callee must save this non-volatile register if this 
                     ; myFunction wants to use this register.
@@ -323,7 +323,7 @@ space (32 bytes) followed by the fifth parameter [[4]](#sources).
 
 For example:
 
-``` x86asm
+``` asm
     ; NOTE THIS IS WINDOWS x64 ASSEMBLY.
     ...
     push rcx        ; Save volatile registers.
@@ -365,7 +365,7 @@ stack frames.
 
 To create a stack frame, you can use this approach:
 
-``` x86asm
+``` asm
 myFunction:
     push rbp            ; Save old frame base pointer.
     mov rbp, rsp        ; Create new base pointer.
@@ -381,7 +381,7 @@ myFunction:
 
 Or you can use this:
 
-``` x86asm
+``` asm
 myFunction:
     enter               ; Create new stack frame.
 
@@ -395,7 +395,7 @@ myFunction:
 
 Or:
 
-``` x86asm
+``` asm
 myFunction:
     enter 0x20          ; Create stack frame and allocate local variables.
 
@@ -407,7 +407,7 @@ myFunction:
 
 Or you can avoid using frames:
 
-``` x86asm
+``` asm
 myFunction:
     sub rsp, <number>   ; Allocate local variables.
 
@@ -480,7 +480,7 @@ found at the [source](#sources).
 
 Example:
 
-``` x86asm
+``` asm
 myFunction:
     ...
 

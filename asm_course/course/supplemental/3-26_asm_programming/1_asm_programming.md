@@ -89,7 +89,7 @@ language. A macro is a sequence of instructions, assigned by a name and could
 be used anywhere in the program. In `NASM`, macros are defined with `%macro`
 and `%endmacro` directives [[2]](#sources).
 
-``` x86asm
+``` asm
 %macro <macro_name> <number_of_params>
     <macro body>
 %endmacro
@@ -107,7 +107,7 @@ For example, a very common need for programs is to write a string of characters
 in the screen. For displaying a string of characters, you need the following
 sequence of instructions [[2]](#sources):
 
-``` x86asm
+``` asm
 mov	edx,len	    ;message length
 mov	ecx,msg	    ;message to write
 mov	ebx,1       ;file descriptor (stdout)
@@ -132,7 +132,7 @@ executed [[2]](#sources).
 
 Following example shows defining and using macros [[2]](#sources):
 
-``` x86asm
+``` asm
 ; A macro with two parameters
 ; Implements the write system call
    %macro write_string 2 

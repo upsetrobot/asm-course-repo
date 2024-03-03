@@ -40,7 +40,7 @@ high-order bits to `0`, you `AND` it with `0FH` [[2]](#sources).
 
 Example:
 
-``` x86asm
+``` asm
     mov bl, 0011_1010b
     and bl, 0fh         ; bl = 0b 0000 1010
 ```
@@ -64,7 +64,7 @@ number. If this is `1`, the number is odd, else the number is even
 
 Example:
 
-``` x86asm
+``` asm
     mov al, number
     and al, 01h     ; al = 1 if odd and al = 0 if even.
 ```
@@ -92,7 +92,7 @@ low-order bits, you can `OR` it with a value `0000 1111` [[2]](#sources).
 
 Example:
 
-``` x86asm
+``` asm
     mov bl, 0b00111010
     or bl, 0x0f             ; This sets bl to 0b 0011 1111
 ```
@@ -145,7 +145,7 @@ memory location [[6]](#sources).
 
 Example:
 
-``` x86asm
+``` asm
    mov al, 1      ; al = 0b 0000 0001 = 1
    not al         ; al = 0b 1111 1110 = -2 or 254
 ```

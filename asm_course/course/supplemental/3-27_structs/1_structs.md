@@ -21,7 +21,7 @@ In NASM, `struc` is used to define a structure. This definition can be used
 to calculate offsets automatically using a dot notation. You can define a 
 structure type using the following notation:
 
-``` x86asm
+``` asm
 struc myStrucType
     
     .member1:   resd    1
@@ -37,7 +37,7 @@ address (e.g., `mov rax, [rdi + myStrucType.member2]` if `rdi` has the
 structure base address). You can also use `<strucname>_size` to get the total
 size of the structure.
 
-``` x86asm
+``` asm
 struc myStructure
 
     .integer_value:     resd    1
@@ -87,7 +87,7 @@ section .bss
 
 Here is an example of a linked list implemented in `NASM`.
 
-``` x86asm
+``` asm
 %define SYS_BRK     12
 
 %define NEWLINE     10

@@ -81,7 +81,7 @@ with shift right (with some exceptions in regards to sign as explained in the
 
 Example:
 
-``` x86asm
+``` asm
     mov al, 1       ; al = 0b 0000 0001 = 1
     shl al, 1       ; al = 0b 0000 0010 = 2 = 1 * 2
     shl al, 2       ; al = 0b 0000 1000 = 8 = 2 * 2 * 2 = 2 * 2^2
@@ -153,7 +153,7 @@ For the `SAR` instruction, the `OF` flag is cleared for all 1-bit shifts
 
 Example:
 
-``` x86asm
+``` asm
     mov al, 1       ; al = 0b 0000 0001 = 1
     sal al, 1       ; al = 0b 0000 0010 = 2 = 1 * 2
     sal al, 2       ; al = 0b 0000 1000 = 8 = 2 * 2 * 2 = 2 * 2^2
@@ -218,7 +218,7 @@ most-significant bits of the result [[2]](#sources).
 
 Example:
 
-``` x86asm
+``` asm
 mov al, 1       ; al = 0b 0000 0001 = 1
 rol al, 1       ; al = 0b 0000 0010 = 2
 
@@ -279,7 +279,7 @@ of the two most-significant bits of the result [[2]](#sources).
 
 Example:
 
-``` x86asm
+``` asm
     mov al, 1       ; al = 0b 0000 0001 = 1
     rcl al, 1       ; al = 0b 0000 0010 = 2 ; CF = 0
 

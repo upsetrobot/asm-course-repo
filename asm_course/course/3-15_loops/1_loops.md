@@ -31,7 +31,7 @@ loop. This is easy to do in assembly. If you want to do something 10 times,
 there are two main ways to set up your for loop:
 
 
-``` x86asm
+``` asm
 myForLoopExample1:
     ...
 
@@ -96,7 +96,7 @@ void simpleForLoop() {
 
 The compiler produces assembly something like this:
 
-``` x86asm
+``` asm
 void simpleForLoop() {
 	       endbr64 
 	       push   rbp
@@ -146,7 +146,7 @@ jump links.
 While loops are just more generalized for loops. You can easily make while 
 loops in assembly.
 
-``` x86asm
+``` asm
     ...
 
     .while:
@@ -174,7 +174,7 @@ void simpleWhileLoop() {
 
 And here is how `gcc` compiles it:
 
-``` x86asm
+``` asm
 void simpleWhileLoop() {
 	       endbr64 
 	       push   rbp
@@ -207,7 +207,7 @@ Do-while loops just do something at least once before checking for a
 condition. These can be done in assembly as well. You just put the condition 
 at the bottom of the block:
 
-``` x86asm
+``` asm
     ...
 
     .do:
@@ -232,7 +232,7 @@ void simpleDoWhileLoop() {
 
 And here is how `gcc` compiles it:
 
-``` x86asm
+``` asm
 void simpleDoWhileLoop() {
 	    endbr64 
 	    push   rbp
@@ -264,7 +264,7 @@ could think of.
 
 For example, here are some interconnected loops:
 
-``` x86asm
+``` asm
     ...
 
     .label1:

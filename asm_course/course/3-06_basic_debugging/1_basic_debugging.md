@@ -30,7 +30,7 @@ you can add `int3` and a debugger will break at that location.
 
 For example, consider the following example:
 
-``` x86asm
+``` asm
     .hello:
         mov rax, 0
         add rax, 2
@@ -44,7 +44,7 @@ Say you want to debug this program. You can verify register state at any point
 in the program. Insert a breakpoint at the end of the `.hello` instructions to 
 see the register state at that point.
 
-``` x86asm
+``` asm
     .hello:
         mov rax, 0
         add rax, 2
@@ -65,7 +65,7 @@ you can comment out the `int3` or simply remove it when you are done.
 
 Here is a program with a bug:
 
-``` x86asm 
+``` asm 
 section  .text
     global main         ; main function used by gcc.
     extern printf       ; libc function.
@@ -158,7 +158,7 @@ and start again.
 
 This time, we will use `int3`. Let's put a breakpoint in our function:
 
-``` x86asm 
+``` asm 
 section  .text
     global main         ; main function used by gcc.
     extern printf       ; libc function.
@@ -224,7 +224,7 @@ out the debug interrupt instruction (`int3`).
     have to remove the `int3` instruction.
 </span></span>
 
-``` x86asm 
+``` asm 
 section  .text
     global main         ; main function used by gcc.
     extern printf       ; libc function.

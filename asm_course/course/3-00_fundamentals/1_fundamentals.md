@@ -78,7 +78,7 @@ focus mainly on Intel as it is considered generally easier to use.
 
 Example:
 
-``` x86asm
+``` asm
     mov rax, 15       ; Intel syntax for 'move value of 15 into register rax'.
     mov $15, %rax     ; AT&T syntax for 'move value of 15 into register rax'.
 ```
@@ -141,7 +141,7 @@ memory location, or a register.
 
 Example:
 
-``` x86asm
+``` asm
     mov rax, 15
      ^   ^   ^
      |   |   |
@@ -162,7 +162,7 @@ the form of software directly to the hardware of the computer via the CPU
 
 Example:
 
-``` x86asm
+``` asm
 ASSEMBLY:                   mov rax, 15
 
 MACHINE CODE (in hex):      48 c7 c0 0f 00 00 00 

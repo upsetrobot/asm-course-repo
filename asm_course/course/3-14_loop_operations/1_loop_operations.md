@@ -48,7 +48,7 @@ to `+127` are allowed with this instruction [[1]](#sources).
 
 For example:
 
-``` x86asm
+``` asm
     ...
 
     ; I want to do something 10 times.
@@ -79,7 +79,7 @@ loop terminator (this includes the condition codes `z` and `nz`).
 
 For example:
 
-``` x86asm
+``` asm
 
     ...
 

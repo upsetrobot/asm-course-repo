@@ -35,7 +35,7 @@ of `1` to perform an increment operation that does update the `CF` flag.)
 
 Example: 
 
-``` x86asm
+``` asm
     inc ebx        ; Increments 32-bit register
     inc dl         ; Increments 8-bit register
     inc [count]    ; Increments the count variable
@@ -54,7 +54,7 @@ disturbing the `CF` flag. (To perform a decrement operation that updates the
 
 Example:
 
-``` x86asm
+``` asm
     segment .data   
 
         count dw 0
@@ -115,7 +115,7 @@ otherwise, the flags are set [[4]](#sources).
 
 Example:
 
-``` x86asm
+``` asm
     mov al, 10
     mov cl, 25
     mul cl          ; ax = 250
@@ -158,7 +158,7 @@ always less than the divisor in magnitude. Overflow is indicated with the
 
 Example:
 
-``` x86asm
+``` asm
     mov ax, '8'
     sub ax, '0'     ; adjust ASCII value to numerical value (if single digit).
 
@@ -197,7 +197,7 @@ the `EAX` register into the high 32 bits of `RAX` [[8]](#sources).
 
 Example:
 
-``` x86asm
+``` asm
     xor rax, rax
     mov al, -99
     
@@ -252,7 +252,7 @@ converted, regardless of the mnemonic used [[9]](#sources).
 
 Example:
 
-``` x86asm
+``` asm
     mov rax, -100
     mov rcx, 5
     cqo             ; Makes `rdx` = `0xffffffffffffffff` (-1).
@@ -279,7 +279,7 @@ by the attribute of the code segment [[6]](#sources).
 
 Example:
 
-``` x86asm
+``` asm
 global main
 section .text
 
@@ -321,7 +321,7 @@ section .data
 
 Examples of invalid uses of lea:
 
-``` x86asm
+``` asm
 global main
 section .text
 
@@ -370,7 +370,7 @@ a memory location. [[7]](#sources).
 
 Example:
 
-``` x86asm
+``` asm
     mov rax, 10
     mov rcx, 2
     xchg rax, rcx       ; rax = 2, rcx = 10
@@ -382,7 +382,7 @@ Example:
 
 Examples of invalid uses of lea:
 
-``` x86asm
+``` asm
     ; If bytesInMemory points to QWORD 1.
     ; If bytesInMemory2 points to QWORD 100.
     xchg [bytesInMemory], [bytesInMemory2]  ; Invalid due to two memory locations.

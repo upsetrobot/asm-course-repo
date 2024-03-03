@@ -57,7 +57,7 @@ conditional jump instruction for decision making [[2]](#sources).
 
 Example:
 
-``` x86asm
+``` asm
     CMP DX,	00  ; Compare the DX value with zero
     JE  L7      ; If yes (they are equal), then jump to label L7
     .           ; Else continue here.
@@ -71,7 +71,7 @@ Example:
 number of times a loop needs to be run. Consider the following typical 
 condition:
 
-``` x86asm
+``` asm
     INC	EDX
     CMP	EDX, 10	; Compares whether the counter has reached 10
     JLE	LP1     ; If it is less than or equal to 10, then jump to LP1
@@ -125,7 +125,7 @@ the offset value in `IP` [[2]](#sources).
 
 Example:
 
-``` x86asm
+``` asm
     xor rcx, rcx
 
     .loop:      ; create a label called .loop
@@ -223,7 +223,7 @@ following the `Jcc` instruction [[4]](#sources).
 
 Example:
 
-``` x86asm
+``` asm
 
     mov cl, 1                   ; cl = 1.
 

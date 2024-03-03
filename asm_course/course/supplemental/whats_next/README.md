@@ -13,7 +13,7 @@ assembly, ARM assembly, MIPS assembly, and much more.
 For example, this course did not go over floating point operations. Check this 
 out:
 
-``` x86asm
+``` asm
     cvtsi2sd xmm0, edi              ; x.
     movsd   qword [a], xmm0         ; a = x.
     mulsd   xmm0, xmm0              ; x^2.
