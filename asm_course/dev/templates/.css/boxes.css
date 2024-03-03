@@ -1,0 +1,86 @@
+
+/* CSS for message boxes (some people call these admonitions). */
+
+.orange {color: #ff6347;}
+
+.box-orange {
+    display: block;
+    border-left: 4px solid;
+    border-radius: 4px;
+    border-color: #ff6347;
+    background-color: #ff634710;
+    box-shadow: 2px 4px 4px 0 rgba(0,0,0,0.2), 4px 6px 10px 0 rgba(0,0,0,0,0.2); 
+    
+}
+
+.bar-orange {
+    display: block;
+    padding: 4px 9px;
+    background-color: #ff634780;
+    border-radius: 0 4px 0 0;
+}
+
+.blue {color: #6699ff;}
+
+.box-blue {
+    display: block;
+    border-left: 4px solid;
+    border-radius: 4px;
+    border-color: #6699ff;
+    background-color: #6699ff10;
+    box-shadow: 2px 4px 4px 0 rgba(0,0,0,0.2), 4px 6px 10px 0 rgba(0,0,0,0,0.2); 
+    
+}
+
+.bar-blue {
+    display: block;
+    padding: 4px 9px;
+    background-color: #6699ff33;
+    border-radius: 0 4px 0 0;
+}
+
+.purple {color: #9966ff;}
+
+.box-purple {
+    display: block;
+    border-left: 4px solid;
+    border-radius: 4px;
+    border-color: #9966ff;
+    background-color: #9966ff10;
+    box-shadow: 2px 4px 4px 0 rgba(0,0,0,0.2), 4px 6px 10px 0 rgba(0,0,0,0,0.2); 
+    
+}
+
+.bar-purple {
+    display: block;
+    padding: 4px 9px;
+    background-color: #9966ff33;
+    border-radius: 0 4px 0 0;
+}
+
+.green {color: #00cc66;}
+
+.box-green {
+    display: block;
+    border-left: 4px solid;
+    border-radius: 4px;
+    border-color: #00cc66;
+    background-color: #00cc6610;
+    box-shadow: 2px 4px 4px 0 rgba(0,0,0,0.2), 4px 6px 10px 0 rgba(0,0,0,0,0.2); 
+    
+}
+
+.bar-green {
+    display: block;
+    padding: 4px 9px;
+    background-color: #00cc6633;
+    border-radius: 0 4px 0 0;
+}
+
+.inner {
+    display: block;
+    padding: 15px 9px;
+}
+
+
+/* End of file. */

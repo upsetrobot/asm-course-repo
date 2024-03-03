@@ -1,0 +1,10 @@
+
+# Ignore .vscode
+.vscode/
+
+# Standard linux.
+*~
+.nfs*
+.fuse_hidden*
+.directory
+.Trash-*
