@@ -1,0 +1,179 @@
+{
+  "main": {
+    "id": "00e95b9d57a70822",
+    "type": "split",
+    "children": [
+      {
+        "id": "f771680c97200ea8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "18771f1514ae87a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3-22_competency_5_locked_up/1_competency.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1_competency"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c6d9228e8a90d9d9",
+    "type": "split",
+    "children": [
+      {
+        "id": "eff2437d090b7de9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7c35f67d16a22982",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1e0c774c3e92f4cc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "af7cfaabc621abe7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9c641d4f0c3b0f34",
+    "type": "split",
+    "children": [
+      {
+        "id": "25ec754454eec0c3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e9eaa94e9ca4998d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3-22_competency_5_locked_up/1_competency.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 1_competency"
+            }
+          },
+          {
+            "id": "79d31697210e0202",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "3-22_competency_5_locked_up/1_competency.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 1_competency"
+            }
+          },
+          {
+            "id": "e22deac71fae9d17",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "eff30cb53cddb270",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "3-22_competency_5_locked_up/1_competency.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 1_competency"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "18771f1514ae87a1",
+  "lastOpenFiles": [
+    "3-20_competency_4_stumped/1_competency.md",
+    "3-16_competency_3_fizzbuzz/1_competency.md",
+    "3-24_competency_6_its_about_time/1_competency.md",
+    "supplemental/3-26_asm_programming/1_asm_programming.md",
+    "supplemental/whats_next/README.md",
+    "3-22_competency_5_locked_up/1_competency.md",
+    "3-11_competency_2_its_a_bomb/1_competency.md",
+    "3-08_competency_1_speed/1_competency.md",
+    "3-11_competency_2_its_a_bomb/README.md",
+    "README.md",
+    "3-10_boolean_operations/README.md"
+  ]
+}

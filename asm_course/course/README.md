@@ -94,8 +94,7 @@ instructions.
 11. `[ ]` [3-10 Boolean Operations](3-10_boolean_operations/README.md).  
 Introduces `and`, `or`, `xor`, `not`, and `test` instructions.
 
-12. `[ ]` [***3-11 Competency 2 Its a Bomb!***](
-    3-11_competency_2_its_a_bomb/README.md).  
+12. `[ ]` [***3-11 Competency 2 Its a Bomb!***](3-11_competency_2_its_a_bomb/README.md).  
 Tests competency with arithmetic, bitwise manipulation, and boolean 
 instructions.
 
